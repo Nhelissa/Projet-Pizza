@@ -1,0 +1,331 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #AB0000;
+    width:100%;
+    height: 12vh ;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    width: 100%;
+   height: 12.5vh;
+   margin-left: 80%;
+}
+
+.menuTelephone{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    margin: -4%;
+}
+
+.menu li a:hover{
+    color: #C96611;
+}
+
+/* corp de la page */
+
+#texte{
+    margin-top: 20vh;
+   text-align: center;
+}
+
+#principale{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#gauche{
+    width: 60%;
+    margin-left: 8%;
+}
+
+input{
+     border: 2px solid #000;
+     width: 75%;
+     height: 7vh;
+     margin-top: 2vh;
+}
+
+textarea{
+    border: 2px solid #000;
+    width: 75%;
+    height: 22vh;
+    margin-top: 2vh;
+    margin-left: -8%;
+}
+
+#droite{
+    width:40%;
+}
+
+marquee{
+   line-height: 1.8;
+   margin-top: -1vh;
+}
+
+#contenue{
+    border: 1px solid #000;
+    width: 55%;
+    height: 17vh;
+}
+
+#image {
+    clear: both;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -3vh;
+    height: 15vh;
+    width: 90%;
+    text-align: center;
+}
+
+#image *{
+   margin: 9px;
+}
+
+.pizza{
+    margin: 0.4%;
+    width: 8%;
+    height: 6vh;
+}
+
+.pizza:hover{
+    border: 1px solid #AB0000;
+}
+
+.pizza2{
+    margin: 0.4%;
+    height: 6vh;
+    width: 7.5%;
+}
+
+.pizza2:hover{
+    border: 1px solid #AB0000;
+}
+
+button{
+    margin-top: 5vh;
+    width: 20%;
+    height: 7vh;
+    font-weight: 800;
+    color: #fff;
+    background-color: #AB0000;
+}
+
+h2{
+   font-size: 2.5rem;
+}
+
+.rouge{
+    color: #AB0000;
+}
+
+#onglet1 *{
+    width: 7%;
+    color: #000;
+}
+
+/* Pied de page */
+
+#footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #2A2A2A;
+    font-size: 12px;
+    margin-top: 18vh;
+    text-align:center ;
+}
+
+#onglet{
+    margin-top: 5vh;
+}
+
+#onglet *{
+    width: 3%;
+    color: #fff;
+}
+
+#footer *{
+    margin-top: 5vh;
+}
+
+.pizz{
+    /* position: absolute; */
+    /* margin-left: 25%; */
+   color: #fff;
+}
+
+.menu2{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 30%;
+    
+}
+
+.menu2 li a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pied{
+     color: #fff;
+}
+
+
+/* Format Telephone */
+
+@media screen and (max-width:680px){
+    
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+     /* Entete de la page */
+    
+    header{
+    margin: 0;
+    padding: 0;
+    background: #AB0000;
+    width:100%;
+    height: 12vh ;
+    position: absolute;
+    }
+    
+    .menu{
+    display: none;
+    }
+    
+    #menuTelephone{
+    display: block;
+    }
+    
+    #menuTelephone ul{ 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    }
+    
+    #menuTelephone li a{ 
+    background-color: #AB0000;
+    text-decoration: none;
+    width:500px ;
+    color: #fff;
+    }
+    
+    #menuTelephone li a:hover{
+    color: rgba(255, 255, 0, 0.411);
+    } 
+    
+    #menuTelephone ul li ul{
+    display: none;
+    }
+    
+    #menuTelephone ul li:hover ul{
+    display: block;
+    }
+    
+    #menuTelephone li:hover ul li{
+    float: none;
+    }
+    
+    #menuTelephone li ul{
+    position: absolute;
+    }
+    
+    #menuTelephone li:hover ul li a{
+    color: #fff;
+    } 
+    
+    .boutonMenu{
+    margin-left: 40%;
+    }
+
+/* corp de la page */
+
+#droite{
+    display: none;
+}
+
+#gauche{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 4%;
+}
+
+input{
+    width: 90%;
+}
+
+textarea{
+   width: 90%;
+   margin-top: -1vh;
+   margin-left: -12%;
+}
+
+#gauche h1{
+    text-align: center;
+}
+
+    
+/* pied de page */
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;  
+}
+
+.menu2{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 1%;
+    
+}
+
+}
